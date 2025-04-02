@@ -10,7 +10,7 @@ dotenv.config()
 
 app.use(express.json());
 app.use(cors({
-  origin:"*",
+  origin:"https://mern-final-assignment-e53.vercel.app/", credentials: true,
   methods:"GET,POST,PUT,DELETE",
   allowedHeaders:"Content-type,Authorization"
 })
