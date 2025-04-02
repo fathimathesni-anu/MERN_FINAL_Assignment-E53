@@ -16,7 +16,9 @@ app.use(cors({
 })
 );
 
-
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
 
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>console.log('mongodb connected'))
